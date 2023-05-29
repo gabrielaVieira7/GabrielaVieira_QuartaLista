@@ -1,0 +1,15 @@
+/*Soma todos os números cujo quadrado for divisível por 4
+Autora: Gabriela
+Data: 29/05/2023 
+ */
+
+public class GabrielaVieira_Exercicio01 {
+    public static void main (String [] args) {
+
+
+        for (int num = 0; num<=)
+
+       
+    }
+    
+}
