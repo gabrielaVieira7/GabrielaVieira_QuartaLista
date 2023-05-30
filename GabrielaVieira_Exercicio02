@@ -1,11 +1,36 @@
-// 2 - Receber três números até que a soma seja 48 ou 71
-        Scanner scanner = new Scanner(System.in);
-        int soma = 0;
-        while (soma != 48 && soma != 71) {
-            System.out.print("Digite três números: ");
-            int num1 = scanner.nextInt();
-            int num2 = scanner.nextInt();
-            int num3 = scanner.nextInt();
-            soma = num1 + num2 + num3;
+/*Recebe três números, e enquanto a soma for diferente de 48 ou 71, continue recebendo infinitamente
+Autora: Gabriela
+Data: 30/05/2023 
+ */
+
+ import java.util.Scanner;
+public class GabrielaVieira_Exercicio02 {
+    public static void main (String []args) {
+        Scanner leitor = new Scanner(System.in);
+
+        //Criando e inincializando as variáveis
+        int num = 0;
+        int nois = 0;
+        int nes = 0;
+        int total = 0;
+
+        while(total != 48 && total != 71) {
+            //Lê as variáveis
+            System.out.println ("Digite o primeiro número");
+            num = leitor.nextInt();
+    
+            System.out.println("Digite o 2ºn número");
+            nois = leitor.nextInt();
+    
+            System.out.println("Digite o 3ºn número");
+            nes = leitor.nextInt();
+    
+            //Faça a soma
+            total = num + nois + nes;
         }
+
         System.out.println("A soma é igual a 48 ou 71.");
+        leitor.close();            
+    }
+        
+}
