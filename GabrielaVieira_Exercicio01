@@ -1,13 +1,27 @@
-import java.util.Scanner;
+/*Somar todos os números cujo quadrado for divisível por 4
+Autora: Gabriela
+Data: 30/05/2023
+ */
 
-public class ExemploPrograma {
+ public class GabrielaVieira_Exercicio01 {
+    public static void main (String [] args) {
+  
+        //Criando e iniciando as variáveis 
+        int val = 50;
+        int val2 = 0;
 
-    public static void main(String[] args) {
-        // 1 - Somar números cujo quadrado seja divisível por 4
-        int somaQuadradosDivisiveisPor4 = 0;
-        for (int i = 1; i <= 100; i++) {
-            if ((i * i) % 4 == 0) {
-                somaQuadradosDivisiveisPor4 += i;
+        //Usando o laço FOR iniciaremos
+        for (int num = 1; num <= val; num++) {
+            int n = num * num;
+             
+            if ( n % 4 == 0) {
+                val2 +=  num;
+
             }
-        }
-        System.out.println("Soma dos números cujo quadrado é divisível por 4: " + somaQuadradosDivisiveisPor4)
+        }    
+        
+        System.out.println("A soma dos números cujo os quadrado for divisível por 4 é " + val2);
+
+
+    }
+ }
