@@ -1,19 +1,51 @@
- // 3 - Gerar 50 números inteiros e 50 números reais e somar ambos
-        int somaInteiros = 0;
-        double somaReais = 0;
+ /*Gere 50 números inteiros e reais e some eles em uma variável
+Autora: Gabriela
+Data: 30/05/2023
+ */
+import java.util.Random;
+public class GabrielaVieira_Exercicio03 {
+    public static void main(String[] args) {
+
+        // Criando e Inicializando os 50 números inteiros    
+        int inteiros = 0;        
+
+        Random random = new Random();
         for (int i = 0; i < 50; i++) {
-            int numeroInteiro = (int) (Math.random() * 100);
-            double numeroReal = Math.random() * 100;
-            somaInteiros += numeroInteiro;
-            somaReais += numeroReal;
+            int val = random.nextInt();
+            inteiros += val;
+        }      
+
+        // Criando e Inicializando os 50 números reais
+        double reais = 0.0;
+        for (int i = 0; i < 50; i++) {
+            double val2 = random.nextDouble();
+            reais += val2;
+
         }
-        System.out.println("Soma dos 50 números inteiros: " + somaInteiros);
-        System.out.println("Soma dos 50 números reais: " + somaReais);
-        if (somaInteiros > somaReais) {
+
+        
+        // Deixar as somas à mostra e ver qual é a maior
+
+        System.out.println("Soma dos números inteiros: " + inteiros);
+
+        System.out.println("Soma dos números reais: " + reais);
+        
+
+        if (inteiros > reais) {
+
             System.out.println("A soma dos inteiros é maior.");
-        } else if (somaInteiros < somaReais) {
+
+        } else if (reais > inteiros) {
+
             System.out.println("A soma dos reais é maior.");
+
         } else {
-            System.out.println("As somas dos inteiros e reais são iguais.");
+
+            System.out.println("As duas somas são iguais.");
+
         }
+
+    }
+
+}
 
