@@ -1,1 +1,9 @@
 
+// 4 - Verificar se o texto possui mais de 10 caracteres
+        System.out.print("Digite um texto: ");
+        String texto = scanner.next();
+        if (texto.length() > 10) {
+            System.out.println("Você digitou um palavrão!");
+        } else {
+            System.out.println("Você digitou uma palavrinha.");
+        }
