@@ -4,17 +4,3 @@
             System.out.println(i);
         
         System.out.println("Fim");
-
-        // 6 - Somar 10 valores inteiros positivos e mostrar sua raiz quadrada
-        int somaPositivos = 0;
-        int valoresLidos = 0;
-        while (valoresLidos < 10) {
-            System.out.print("Digite um valor inteiro: ");
-            int valor = scanner.nextInt();
-            if (valor > 0) {
-                somaPositivos += valor;
-                valoresLidos++;
-            }
-        }
-        double raizQuadrada = Math.sqrt(somaPositivos);
-        System.out.println("A raiz quadrada da soma dos valores positivos é: " + raiz
