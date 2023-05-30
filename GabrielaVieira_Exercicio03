@@ -1,1 +1,19 @@
+ // 3 - Gerar 50 números inteiros e 50 números reais e somar ambos
+        int somaInteiros = 0;
+        double somaReais = 0;
+        for (int i = 0; i < 50; i++) {
+            int numeroInteiro = (int) (Math.random() * 100);
+            double numeroReal = Math.random() * 100;
+            somaInteiros += numeroInteiro;
+            somaReais += numeroReal;
+        }
+        System.out.println("Soma dos 50 números inteiros: " + somaInteiros);
+        System.out.println("Soma dos 50 números reais: " + somaReais);
+        if (somaInteiros > somaReais) {
+            System.out.println("A soma dos inteiros é maior.");
+        } else if (somaInteiros < somaReais) {
+            System.out.println("A soma dos reais é maior.");
+        } else {
+            System.out.println("As somas dos inteiros e reais são iguais.");
+        }
 
