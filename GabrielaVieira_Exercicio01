@@ -1,5 +1,4 @@
-/*Somar todos os números cujo quadrado for divisível por 4
-Autora: Gabriela
+/*Somar todos os números cujo quadrado for divisível por 4Autora: Gabriela
 Data: 30/05/2023
  */
 
@@ -10,7 +9,7 @@ Data: 30/05/2023
         int val = 50;
         int val2 = 0;
 
-        //Usando o laço FOR iniciaremos
+        //Usando o laço de repetição FOR iniciaremos
         for (int num = 1; num <= val; num++) {
             int n = num * num;
              
@@ -25,3 +24,4 @@ Data: 30/05/2023
 
     }
  }
+
