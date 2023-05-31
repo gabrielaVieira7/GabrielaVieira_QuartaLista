@@ -1,5 +1,34 @@
- // 6 - Somar 10 valores inteiros positivos e mostrar sua raiz quadrada
-        int somaPositivos = 0;
+ // 6 - Somar 10 valores inteiros positivos e mostrar sua raiz quadrada/*some 10 valores inteiros positivos e mostre sua raiz quadrada. 
+Autora: Gabriela
+Data: 30/05/2023
+*/
+
+import java.util.Scanner;
+public class GabrielaVieira_Exercicio06 {
+    public static void main (String [] args) {
+        Scanner leitor = new Scanner(System.in);
+
+        //Criando e inicializando as variáveis
+        int cont = 0;
+        int total = 0;
+        
+         //Usando o laço de repetição DO WHILE e lendo a varíavel iniciaremos
+         do {
+         System.out.print("Digite um valor inteiro positivo: ");
+         int valor = leitor.nextInt();
+        
+        if (valor > 0) {
+        total += valor;
+        cont++;
+                    }
+        } while (cont < 10);
+        
+        double raiz = Math.sqrt(total);
+        System.out.println("A soma dos valores é: " + total);
+        System.out.println("A raiz quadrada da soma é: " + raiz);
+        leitor.close();
+            }
+        }
         int valoresLidos = 0;
         while (valoresLidos < 10) {
             System.out.print("Digite um valor inteiro: ");
