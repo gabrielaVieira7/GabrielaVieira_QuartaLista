@@ -1,6 +1,22 @@
+/* Programa que faça uma contagem de 10 a 0 e mostre "fim" quando terminada.
+Autora: Gabriela
+Data: 30/05/2023
+ */
 
-// 5 - Contagem regressiva
-        for (int i = 10; i >= 0; i--) {
-            System.out.println(i);
-        
-        System.out.println("Fim");
+public class GabrielaVieira_Exercicio05 {
+    public static void main (String [] args) {
+
+        //Criando uma variável
+        int cont;
+
+        //Inicializando a variável criada
+        cont = 10;
+
+        //Usando o laço de repetição WHILE começaremos
+        while (cont >= 0) {
+            System.out.println(cont);
+            cont--;
+        }
+        System.out.println("FIM!");
+    }
+}
