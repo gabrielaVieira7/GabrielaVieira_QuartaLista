@@ -1,9 +1,26 @@
+/*Pega um texto e verifique se a quantidad de caracteres desse texto for maior que 10.
+ Autora: Gabriela
+Data: 30/05/2023
+ */
+import java.util.Scanner;
+public class GabrielaVieira_Exercicio04 {
+    public static void main(String[] args) {
+        Scanner leitor = new Scanner(System.in);
 
-// 4 - Verificar se o texto possui mais de 10 caracteres
-        System.out.print("Digite um texto: ");
-        String texto = scanner.next();
-        if (texto.length() > 10) {
-            System.out.println("Você digitou um palavrão!");
-        } else {
-            System.out.println("Você digitou uma palavrinha.");
-        }
+        //Criando variável
+        String texto;
+
+        //Usando o laço de repetição DO WHILE e lendo a varíavel iniciaremos
+        do {
+            System.out.print("Digite um texto: ");
+            texto = leitor.nextLine();
+
+            if (texto.length() <= 10) {
+                System.out.println("Você digitou uma palavrinha.");
+            }
+        } while (texto.length() <= 10);
+
+        System.out.println("Você digitou um palavrão!");
+        leitor.close();
+    }
+}
